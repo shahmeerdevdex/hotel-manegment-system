@@ -1,1 +1,0 @@
-# hotel-manegment-system
