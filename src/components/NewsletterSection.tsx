@@ -39,15 +39,15 @@ const NewsletterSection = () => {
     <section className="py-16 px-4 md:px-8 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex justify-center mb-6">
-          <div className="bg-hotel-red/10 p-3 rounded-full">
-            <Mail className="h-7 w-7 text-hotel-red" />
+          <div className="bg-hotel-accent/10 p-3 rounded-full">
+            <Mail className="h-7 w-7 text-hotel-accent" />
           </div>
         </div>
         
-        <h2 className="text-3xl font-bold text-hotel-darkGray mb-3 animate-fade-in">
+        <h2 className="text-3xl font-bold text-hotel-brown mb-3 animate-fade-in">
           Subscribe to Our Newsletter
         </h2>
-        <p className="max-w-2xl mx-auto text-hotel-lightGray mb-8 animate-fade-in">
+        <p className="max-w-2xl mx-auto text-gray-600 mb-8 animate-fade-in">
           Stay updated with special offers, new property announcements, and travel inspiration
         </p>
         
@@ -62,7 +62,7 @@ const NewsletterSection = () => {
           />
           <Button 
             type="submit" 
-            className="bg-hotel-red hover:bg-red-700 text-white"
+            className="bg-hotel-accent hover:bg-hotel-brown text-white"
             disabled={isLoading}
           >
             {isLoading ? "Subscribing..." : "Subscribe"}

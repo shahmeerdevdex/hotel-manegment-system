@@ -1,4 +1,5 @@
 
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AmenitiesSection from '../components/AmenitiesSection';
@@ -15,12 +16,19 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <AmenitiesSection />
-        <RoomsSection />
-        <RewardsSection />
-        <WhyBookSection />
-        <TestimonialsSection />
-        <NewsletterSection />
+        
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <AmenitiesSection />
+          <RoomsSection />
+          <RewardsSection />
+          <WhyBookSection />
+          <TestimonialsSection />
+          <NewsletterSection />
+        </motion.div>
       </main>
       <Footer />
     </div>
